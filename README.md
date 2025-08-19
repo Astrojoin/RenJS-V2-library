@@ -1,4 +1,12 @@
-# RenJS - V2
+# RenJS - V2 - LIB
+
+## LIB VERSION
+
+This is the library version of RenJS, which is a module that can be imported in other projects, such as React, Vue, or Angular applications. It is not meant to be used as a standalone game engine, but rather as a library that can be used to create Visual Novels in a more modern way.
+
+For documentation refer to the [RenJS V2 Docs](https://github.com/lunafromthemoon/RenJS-V2/tree/main/docs).
+
+## RenJS V2
 
 ![alt text](https://renjs.net/assets/images/renjs-title.svg "RenJS Logo")
 

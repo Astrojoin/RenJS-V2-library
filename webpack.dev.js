@@ -1,21 +1,26 @@
-const { merge } = require('webpack-merge')
-const common = require('./webpack.common')
-const path = require('path')
-const CopyPlugin = require('copy-webpack-plugin');
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import path from 'path';
 
-module.exports = merge(common, {
-    mode: 'development',
-    devtool: "inline-source-map",
-    plugins: [
-        new CopyPlugin({
-            patterns: [
-                // { from: path.resolve(__dirname, 'dev-only/assets'), to: 'assets' },
-                // { from: path.resolve(__dirname, 'dev-only/story'), to: 'story' },
-                // { from: path.resolve(__dirname, 'dev-only/GUI.yaml'), to: '' },
-                // { from: path.resolve(__dirname, 'dev-only/index.html'), to: '' },
-                // { from: path.resolve(__dirname, 'dev-only/config.js'), to: '' },
-                { from: path.resolve(__dirname, 'dev-only'), to: '' }
-            ]
-        }),
-    ],
-})
+export default {
+	target: ['web'],
+	mode: 'development',
+	devtool: "inline-source-map",
+	entry: path.join(process.cwd(), './dev-only/story/quickstart/boot.js'),
+	devServer: {
+		hot: true,
+		static: {
+			directory: path.join(process.cwd(), 'dev-only'),
+			publicPath: '/'
+		}
+	},
+	resolve: {
+		extensions: ['.js']
+	},
+	plugins: [
+		new HtmlWebpackPlugin({
+			template: path.join(process.cwd(), 'dev-only/quickstart.html'),
+			filename: 'index.html',
+			scriptLoading: 'module'
+		})
+	],
+}

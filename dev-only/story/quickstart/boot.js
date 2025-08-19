@@ -1,3 +1,5 @@
+import RenJS from '../../../dist/renjs.mjs'
+
 const globalConfig =  {
   'name': 'Quickstart',
   'w': 800,
@@ -29,5 +31,5 @@ const globalConfig =  {
   ]
 }
 
-const RenJSGame = new RenJS.game(globalConfig)
+const RenJSGame = new RenJS.Game(globalConfig)
 RenJSGame.launch()

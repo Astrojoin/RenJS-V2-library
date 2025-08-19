@@ -1,3 +1,13 @@
+## [2.9.4-lib] (2025-08-18)
+
+### Features
+
+* **renjs-lib:** Updated and changed compilation result to produce a library module in ESM form intead of a global variable(var). Making it easier to use in modern JavaScript projects, such as React, Vue, or Angular applications.
+
+### Know Errors
+
+* Most of the release system is not working, such as github actions, changelog generation, and versioning. The release system will be updated in the future to support this new format.
+
 ## [2.9.4](https://github.com/lunafromthemoon/RenJS-V2/compare/v2.9.3...v2.9.4) (2024-02-26)
 
 

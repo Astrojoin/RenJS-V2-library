@@ -1,4 +1,7 @@
 import RJS from './core/RJS';
 import plugin from './core/Plugin';
-export declare const game: typeof RJS;
-export declare const Plugin: typeof plugin;
+declare const _default: {
+    Game: typeof RJS;
+    Plugin: typeof plugin;
+};
+export default _default;

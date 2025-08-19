@@ -1,10 +1,11 @@
 {
   "compilerOptions": {
+    "moduleResolution": "node",
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "strictBindCallApply": true,
     "strictFunctionTypes": true,
-    "target": "es5",
+    "target": "es6",
     "sourceMap": true,
 //    "allowJs": true,
     "outDir": "dist/types",
