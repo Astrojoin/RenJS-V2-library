@@ -186,6 +186,6 @@ export default class RJSMenu extends Group {
     }
 
     destroy(): void {
-    	this.destroy();
+    	super.destroy();
     }
 }

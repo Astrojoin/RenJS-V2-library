@@ -199,6 +199,6 @@ export default class RJSHUD extends RJSMenu {
     }
 
     destroy(): void {
-    	this.destroy();
+    	super.destroy();
     }
 }

@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "renjs-lib",
-  "version": "2.9.4-lib",
+  "version": "2.9.5-lib",
   "description": "RenJS is a videogame library for making Visual Novels that run directly in the web browser",
   "author": "lunafromthemoon",
   "contributors": [

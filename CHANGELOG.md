@@ -1,3 +1,9 @@
+## [2.9.5-lib] (2025-08-19)
+
+### Bug Fixes
+
+* **renjs-lib:** Fixed game destroy stack overflow error on RJSHUD & RJSMenu.
+
 ## [2.9.4-lib] (2025-08-18)
 
 ### Features
