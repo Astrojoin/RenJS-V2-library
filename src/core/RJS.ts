@@ -187,7 +187,7 @@ export default class RJS extends Game {
     async checkPlugins(signal: string,params?: any[]): Promise<any>{
         for (const plugin in this.pluginsRJS) {
             if (this.pluginsRJS[plugin][signal]){
-                await this.pluginsRJS[plugin][signal](...params);
+                await this.pluginsRJS[plugin][signal](...(params || []));
             }
         }
     }
